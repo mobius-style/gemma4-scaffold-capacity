@@ -156,7 +156,7 @@ Our earlier single-turn result did not transfer to budgeted agents; we read this
 5. **Task selection:** the 104 tasks are a subset of 129, and the mid level (three seeds) is exploratory only.
 
 ### 7. Reproducibility
-The public repository (https://github.com/mobius-style/gemma4-scaffold-capacity, Apache-2.0; Zenodo DOI and Kaggle Dataset/Notebook links in its README) contains:
+The public repository (https://github.com/mobius-style/gemma4-scaffold-capacity, Apache-2.0; archived at doi:10.5281/zenodo.23813680; Kaggle Dataset/Notebook links in its README) contains:
 
 - the pre-registration, freeze manifests and deviation logs (DEVIATIONS.md, DEVIATIONS_auto.md, schedule.log);
 - one JSONL record per task-run (3,432: 30 confirmatory and 9 mid cells), with outcome, ladder level, end reason, tool counts and patch hash;
