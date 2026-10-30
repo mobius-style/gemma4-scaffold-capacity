@@ -1,0 +1,313 @@
+{
+ "gee": {
+  "n_rows": 3120,
+  "n_tasks": 104,
+  "working_corr": 0.5071069373491216,
+  "coef": {
+   "Intercept": {
+    "logit": -2.197224577336223,
+    "ci95": [
+     -2.720300267950985,
+     -1.6741488867214613
+    ],
+    "p": 1.8258547019885887e-16
+   },
+   "C(dose)[T.max]": {
+    "logit": 0.49247648509779535,
+    "ci95": [
+     0.18819294884863136,
+     0.7967600213469593
+    ],
+    "p": 0.0015130942756805365
+   },
+   "C(model)[T.gemma-4-12b-it]": {
+    "logit": 1.108842556918926,
+    "ci95": [
+     0.7289565286080628,
+     1.4887285852297891
+    ],
+    "p": 1.0595879482257218e-08
+   },
+   "C(model)[T.gemma-4-26b-a4b-it]": {
+    "logit": 1.2374487335223272,
+    "ci95": [
+     0.8320629886318738,
+     1.6428344784127806
+    ],
+    "p": 2.192904438894313e-09
+   },
+   "C(dose)[T.max]:C(model)[T.gemma-4-12b-it]": {
+    "logit": -0.6080672690064367,
+    "ci95": [
+     -0.9519593215038764,
+     -0.26417521650899706
+    ],
+    "p": 0.0005290631847032993
+   },
+   "C(dose)[T.max]:C(model)[T.gemma-4-26b-a4b-it]": {
+    "logit": -0.5410260832799112,
+    "ci95": [
+     -0.8820768696544825,
+     -0.19997529690533988
+    ],
+    "p": 0.0018760114066015045
+   }
+  }
+ },
+ "ladder_sign_test": {
+  "gemma-4-26b-a4b-it": {
+   "n_tasks": 104,
+   "mean_level_min": 2.7807692307692307,
+   "mean_level_max": 2.659615384615385,
+   "tasks_up": 35,
+   "tasks_down": 49,
+   "ties": 20,
+   "p_two_sided": 0.15565646371399705
+  },
+  "gemma-4-12b-it": {
+   "n_tasks": 104,
+   "mean_level_min": 2.419230769230769,
+   "mean_level_max": 2.0653846153846156,
+   "tasks_up": 26,
+   "tasks_down": 58,
+   "ties": 20,
+   "p_two_sided": 0.0006279472715818216
+  },
+  "gemma-4-e4b-it": {
+   "n_tasks": 104,
+   "mean_level_min": 2.2346153846153847,
+   "mean_level_max": 2.8346153846153848,
+   "tasks_up": 61,
+   "tasks_down": 15,
+   "ties": 28,
+   "p_two_sided": 9.842847414734726e-08
+  }
+ },
+ "ngram13_overlap": {
+  "gemma-4-12b-it/max": {
+   "pre": {
+    "n_resolved_patches": 0,
+    "mean_ref13_covered": null,
+    "share_ge_0.5": null
+   },
+   "post": {
+    "n_resolved_patches": 38,
+    "mean_ref13_covered": 0.18421052631578946,
+    "share_ge_0.5": 0.18421052631578946
+   }
+  },
+  "gemma-4-26b-a4b-it/max": {
+   "pre": {
+    "n_resolved_patches": 1,
+    "mean_ref13_covered": 0.07291666666666667,
+    "share_ge_0.5": 0.0
+   },
+   "post": {
+    "n_resolved_patches": 49,
+    "mean_ref13_covered": 0.1904761904761905,
+    "share_ge_0.5": 0.1836734693877551
+   }
+  },
+  "gemma-4-e4b-it/max": {
+   "pre": {
+    "n_resolved_patches": 1,
+    "mean_ref13_covered": 0.0,
+    "share_ge_0.5": 0.0
+   },
+   "post": {
+    "n_resolved_patches": 21,
+    "mean_ref13_covered": 0.23809523809523808,
+    "share_ge_0.5": 0.23809523809523808
+   }
+  },
+  "gemma-4-12b-it/min": {
+   "pre": {
+    "n_resolved_patches": 3,
+    "mean_ref13_covered": 0.0,
+    "share_ge_0.5": 0.0
+   },
+   "post": {
+    "n_resolved_patches": 38,
+    "mean_ref13_covered": 0.2192982456140351,
+    "share_ge_0.5": 0.21052631578947367
+   }
+  },
+  "gemma-4-26b-a4b-it/min": {
+   "pre": {
+    "n_resolved_patches": 0,
+    "mean_ref13_covered": null,
+    "share_ge_0.5": null
+   },
+   "post": {
+    "n_resolved_patches": 45,
+    "mean_ref13_covered": 0.17222222222222222,
+    "share_ge_0.5": 0.17777777777777778
+   }
+  },
+  "gemma-4-e4b-it/min": {
+   "pre": {
+    "n_resolved_patches": 0,
+    "mean_ref13_covered": null,
+    "share_ge_0.5": null
+   },
+   "post": {
+    "n_resolved_patches": 14,
+    "mean_ref13_covered": 0.42857142857142855,
+    "share_ge_0.5": 0.42857142857142855
+   }
+  }
+ },
+ "ngram13_overlap_novel": {
+  "gemma-4-12b-it/max": {
+   "pre": {
+    "n_resolved_patches": 0,
+    "mean_ref13_covered": null,
+    "share_ge_0.5": null
+   },
+   "post": {
+    "n_resolved_patches": 35,
+    "mean_ref13_covered": 0.17142857142857143,
+    "share_ge_0.5": 0.17142857142857143
+   }
+  },
+  "gemma-4-26b-a4b-it/max": {
+   "pre": {
+    "n_resolved_patches": 1,
+    "mean_ref13_covered": 0.07291666666666667,
+    "share_ge_0.5": 0.0
+   },
+   "post": {
+    "n_resolved_patches": 46,
+    "mean_ref13_covered": 0.13768115942028986,
+    "share_ge_0.5": 0.13043478260869565
+   }
+  },
+  "gemma-4-e4b-it/max": {
+   "pre": {
+    "n_resolved_patches": 1,
+    "mean_ref13_covered": 0.0,
+    "share_ge_0.5": 0.0
+   },
+   "post": {
+    "n_resolved_patches": 20,
+    "mean_ref13_covered": 0.25,
+    "share_ge_0.5": 0.25
+   }
+  },
+  "gemma-4-12b-it/min": {
+   "pre": {
+    "n_resolved_patches": 3,
+    "mean_ref13_covered": 0.0,
+    "share_ge_0.5": 0.0
+   },
+   "post": {
+    "n_resolved_patches": 37,
+    "mean_ref13_covered": 0.1981981981981982,
+    "share_ge_0.5": 0.1891891891891892
+   }
+  },
+  "gemma-4-26b-a4b-it/min": {
+   "pre": {
+    "n_resolved_patches": 0,
+    "mean_ref13_covered": null,
+    "share_ge_0.5": null
+   },
+   "post": {
+    "n_resolved_patches": 42,
+    "mean_ref13_covered": 0.1130952380952381,
+    "share_ge_0.5": 0.11904761904761904
+   }
+  },
+  "gemma-4-e4b-it/min": {
+   "pre": {
+    "n_resolved_patches": 0,
+    "mean_ref13_covered": null,
+    "share_ge_0.5": null
+   },
+   "post": {
+    "n_resolved_patches": 13,
+    "mean_ref13_covered": 0.38461538461538464,
+    "share_ge_0.5": 0.38461538461538464
+   }
+  }
+ },
+ "bh_exploratory": {
+  "m": 18,
+  "p_raw": {
+   "ladder/gemma-4-26b-a4b-it": 0.15565646371399705,
+   "ladder/gemma-4-12b-it": 0.0006279472715818216,
+   "ladder/gemma-4-e4b-it": 9.842847414734726e-08,
+   "per_repo/gemma-4-26b-a4b-it/Textualize/rich": 0.069,
+   "per_repo/gemma-4-26b-a4b-it/fastapi/fastapi": 0.781,
+   "per_repo/gemma-4-26b-a4b-it/psf/requests": 0.665,
+   "per_repo/gemma-4-12b-it/Textualize/rich": 0.485,
+   "per_repo/gemma-4-12b-it/fastapi/fastapi": 0.406,
+   "per_repo/gemma-4-12b-it/psf/requests": 0.665,
+   "per_repo/gemma-4-e4b-it/Textualize/rich": 0.044,
+   "per_repo/gemma-4-e4b-it/fastapi/fastapi": 0.06,
+   "per_repo/gemma-4-e4b-it/psf/requests": 0.0,
+   "mid/gemma-4-26b-a4b-it/mid_minus_min": 0.408,
+   "mid/gemma-4-26b-a4b-it/max_minus_mid": 0.646,
+   "mid/gemma-4-12b-it/mid_minus_min": 0.115,
+   "mid/gemma-4-12b-it/max_minus_mid": 0.709,
+   "mid/gemma-4-e4b-it/mid_minus_min": 0.117,
+   "mid/gemma-4-e4b-it/max_minus_mid": 0.171
+  },
+  "q": {
+   "per_repo/gemma-4-26b-a4b-it/fastapi/fastapi": 0.781,
+   "mid/gemma-4-12b-it/max_minus_mid": 0.7507058823529411,
+   "per_repo/gemma-4-12b-it/psf/requests": 0.748125,
+   "per_repo/gemma-4-26b-a4b-it/psf/requests": 0.748125,
+   "mid/gemma-4-26b-a4b-it/max_minus_mid": 0.748125,
+   "per_repo/gemma-4-12b-it/Textualize/rich": 0.6715384615384615,
+   "mid/gemma-4-26b-a4b-it/mid_minus_min": 0.612,
+   "per_repo/gemma-4-12b-it/fastapi/fastapi": 0.612,
+   "mid/gemma-4-e4b-it/max_minus_mid": 0.3078,
+   "ladder/gemma-4-26b-a4b-it": 0.3078,
+   "mid/gemma-4-e4b-it/mid_minus_min": 0.26325000000000004,
+   "mid/gemma-4-12b-it/mid_minus_min": 0.26325000000000004,
+   "per_repo/gemma-4-26b-a4b-it/Textualize/rich": 0.207,
+   "per_repo/gemma-4-e4b-it/fastapi/fastapi": 0.207,
+   "per_repo/gemma-4-e4b-it/Textualize/rich": 0.19799999999999998,
+   "ladder/gemma-4-12b-it": 0.0037676836294909294,
+   "ladder/gemma-4-e4b-it": 8.858562673261253e-07,
+   "per_repo/gemma-4-e4b-it/psf/requests": 0.0
+  }
+ },
+ "unadjusted_outside_family": {
+  "contamination_split/gemma-4-26b-a4b-it/pre_cutoff": 0.008,
+  "contamination_split/gemma-4-26b-a4b-it/post_cutoff": 0.572,
+  "contamination_split/gemma-4-12b-it/pre_cutoff": 0.467,
+  "contamination_split/gemma-4-12b-it/post_cutoff": 0.323,
+  "contamination_split/gemma-4-e4b-it/pre_cutoff": 0.103,
+  "contamination_split/gemma-4-e4b-it/post_cutoff": 0.003,
+  "layout_26b/dual": 0.467,
+  "layout_26b/single": 0.2
+ },
+ "slope_check": {
+  "slope": -0.03173076923076923,
+  "ci95": [
+   -0.05384615384615385,
+   -0.008653846153846156
+  ],
+  "p_one_sided_gt0": 0.9975,
+  "note": "equals H2/2 for ranks 1,2,3"
+ },
+ "mcnemar_majority": {
+  "gemma-4-12b-it": {
+   "max_only": 2,
+   "min_only": 7,
+   "mcnemar_p": 0.1796875
+  },
+  "gemma-4-26b-a4b-it": {
+   "max_only": 3,
+   "min_only": 4,
+   "mcnemar_p": 1.0
+  },
+  "gemma-4-e4b-it": {
+   "max_only": 4,
+   "min_only": 1,
+   "mcnemar_p": 0.375
+  }
+ }
+}

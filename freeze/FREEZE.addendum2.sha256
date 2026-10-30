@@ -1,0 +1,14 @@
+# FREEZE ADDENDUM 2 2026-10-29T06:26:36+09:00 — written before any confirmatory inference was run (only per-cell resolved/cap counts had been viewed). Covers D3-D9 code: analysis (D4, unchanged since 4c11126 2026-10-23 11:19), harness wrapper (D5), cell runner/schedulers (D3, D8, D9), boot resume, watcher, power sampler, server launcher.
+0b36f08149bf20ba5c6c97de17e0f04e138ef53a24f9f78938a5f9a3524b05d9  scripts/analyze.py
+06d9f258be7195e3a23365f67cffced29997e74d1cbad273e42aa6ff5879a94e  scripts/figures.py
+602742f11f1a1b1dcee0abaeb296b9c4eb8ba1a021a670c00942ef0367c66e17  scripts/eval_cli.py
+28a55743cff1b1806514e8580f0a8c4bb4f0a7509d2bcbac0c1b1d72f75c9a9a  scripts/run_cell.sh
+b01f2e0df7504cfa5552ebbaec33930ee8107092495a2308bbf1e072ec0c6c5b  scripts/schedule_v2.sh
+23c516019a9828dd2011d8af98db75980659bffa287da15cd40f375916bdd35f  scripts/schedule_v3.sh
+57d6ffbabe85f30b133baca404be028645505c12af479a407c0c1d4cce4e7439  scripts/resume_after_boot.sh
+4fa60998e2f531b4f2a42834386fb3ccb7fada788f78a77188d5c21307b08340  scripts/watch_events.sh
+6fe6e0fbb15200fbe415b8975ed2864490378b8d1c8420e14dc499cd6a0b0f36  scripts/sample_power.sh
+05564ebd591eb088a4802611da75495242775dcf1cd19f6ea0be52b9cb8bb2c7  run_server.sh
+f89c4007923ec66515a661ee67f059a32f509d8409e1e5c8c838498b1cf24b19  DEVIATIONS.md
+759a3cbe6c9a47dc12bf24b8dbca899da7e77c2c117b6a7d89abf7870a883621  PREREGISTRATION.md
+095a03b0ab4d01726f6d3947d7fa3173742d4d5cdbeb567c075ea8f97cbf34cb  TASKSET.txt

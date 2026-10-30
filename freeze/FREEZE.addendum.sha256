@@ -1,0 +1,5 @@
+# FREEZE ADDENDUM 2026-10-23T00:20:04+09:00 — D1/D2 (see DEVIATIONS.md); applied before any completed confirmatory run
+448cdb28c9edb9f61b43cf2384c46607315068345d582b901befa4a8a648a3a7  scripts/eval_cli.py
+a939f4313379224136d9f7f75a5175ad261fbd4975ca6d1a5c059d3d81236ad4  scripts/run_cell.sh
+e2f19c8e76ffb61a6bc5f315ccb12e15aa83a21a24ba42c07e4f49d2e21d13d1  scripts/schedule.sh
+ee59e9ad997c2c6833b1146db51455a2a60bcdc974cb0cbe3da9ee1556464928  DEVIATIONS.md

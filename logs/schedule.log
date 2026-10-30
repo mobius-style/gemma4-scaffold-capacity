@@ -1,0 +1,142 @@
+2026-10-22T23:05:32+09:00 START min 26b s1
+2026-10-23T00:02:55+09:00 ABORT min 26b s1 (D1: CLI lacks events compaction -> 32k overflow; D2: malformed tool-arg JSON crashes task). Cell re-run from scratch after fix.
+2026-10-23T00:20:27+09:00 START min 26b s1
+/home/happy/.codex/work/kaggle_gemma4_paper_2026-10/runs/min_gemma-4-26b-a4b-it_s1: resolved 24/104
+2026-10-23T05:05:10+09:00 START max 26b s1
+/home/happy/.codex/work/kaggle_gemma4_paper_2026-10/runs/max_gemma-4-26b-a4b-it_s1: resolved 26/104
+2026-10-23T09:33:09+09:00 END max 26b s1
+2026-10-23T09:33:22+09:00 START min 12b s1
+/home/happy/.codex/work/kaggle_gemma4_paper_2026-10/runs/min_gemma-4-12b-it_s1: resolved 21/104
+2026-10-23T13:56:53+09:00 END min 12b s1
+2026-10-23T13:56:53+09:00 START max 12b s1
+2026-10-23T15:03:06+09:00 ABORT max 12b s1 (D5: llama-server peg-gemma4 parse 500 kills tasks; 12B min s1 had 25/104 such deaths -> both 12B cells to be re-run after fix)
+2026-10-23T15:23:37+09:00 START min 12b s1
+/home/happy/.codex/work/kaggle_gemma4_paper_2026-10/runs/min_gemma-4-12b-it_s1: resolved 26/104
+2026-10-23T20:06:38+09:00 END min 12b s1
+2026-10-23T20:06:38+09:00 START max 12b s1
+/home/happy/.codex/work/kaggle_gemma4_paper_2026-10/runs/max_gemma-4-12b-it_s1: resolved 25/104
+2026-10-24T00:55:16+09:00 END max 12b s1
+2026-10-24T00:55:29+09:00 START min e4b s1
+/home/happy/.codex/work/kaggle_gemma4_paper_2026-10/runs/min_gemma-4-e4b-it_s1: resolved 10/104
+2026-10-24T02:03:15+09:00 END min e4b s1
+2026-10-24T02:03:15+09:00 START max e4b s1
+/home/happy/.codex/work/kaggle_gemma4_paper_2026-10/runs/max_gemma-4-e4b-it_s1: resolved 13/104
+2026-10-24T03:09:35+09:00 END max e4b s1
+2026-10-24T03:10:03+09:00 START min 26b s2
+/home/happy/.codex/work/kaggle_gemma4_paper_2026-10/runs/min_gemma-4-26b-a4b-it_s2: resolved 26/104
+2026-10-24T07:57:08+09:00 END min 26b s2
+2026-10-24T07:57:08+09:00 START max 26b s2
+/home/happy/.codex/work/kaggle_gemma4_paper_2026-10/runs/max_gemma-4-26b-a4b-it_s2: resolved 28/104
+2026-10-24T12:27:41+09:00 END max 26b s2
+2026-10-24T12:27:54+09:00 START min 12b s2
+/home/happy/.codex/work/kaggle_gemma4_paper_2026-10/runs/min_gemma-4-12b-it_s2: resolved 25/104
+2026-10-24T17:03:18+09:00 END min 12b s2
+2026-10-24T17:03:18+09:00 START max 12b s2
+/home/happy/.codex/work/kaggle_gemma4_paper_2026-10/runs/max_gemma-4-12b-it_s2: resolved 19/104
+2026-10-24T21:41:18+09:00 END max 12b s2
+2026-10-24T21:41:31+09:00 START min e4b s2
+/home/happy/.codex/work/kaggle_gemma4_paper_2026-10/runs/min_gemma-4-e4b-it_s2: resolved 10/104
+2026-10-24T22:46:30+09:00 END min e4b s2
+2026-10-24T22:46:30+09:00 START max e4b s2
+/home/happy/.codex/work/kaggle_gemma4_paper_2026-10/runs/max_gemma-4-e4b-it_s2: resolved 15/104
+2026-10-24T23:53:11+09:00 END max e4b s2
+2026-10-24T23:53:34+09:00 START min 26b s3
+2026-10-25T10:54:01+09:00 ABORT min 26b s3 (host crash ~04:01 JST 10-25, 93/104 done; re-run from scratch per PREREG §2)
+2026-10-25T10:54:29+09:00 START min 26b s3
+2026-10-25T12:13:43+09:00 ABORT min_gemma-4-26b-a4b-it_s3 (host reboot; 28/104 done; re-run from scratch per PREREG §2)
+2026-10-25T12:14:07+09:00 START min 26b s3
+2026-10-25T12:16:08+09:00 ABORT min_gemma-4-26b-a4b-it_s3 (host reboot; 0/104 done; re-run from scratch per PREREG §2)
+2026-10-25T12:16:31+09:00 START min 26b s3
+2026-10-25T12:17:45+09:00 ABORT min_gemma-4-26b-a4b-it_s3 (host reboot; 0/104 done; re-run from scratch per PREREG §2)
+2026-10-25T12:18:09+09:00 START min 26b s3
+2026-10-25T12:22:10+09:00 ABORT min_gemma-4-26b-a4b-it_s3 (host reboot; 0/104 done; re-run from scratch per PREREG §2)
+2026-10-25T12:22:34+09:00 START min 26b s3
+2026-10-25T14:06:21+09:00 ABORT min_gemma-4-26b-a4b-it_s3 (host reboot; 39/104 done; re-run from scratch per PREREG §2)
+2026-10-25T14:08:00+09:00 START min 26b s3
+2026-10-25T14:23:03+09:00 ABORT min_gemma-4-26b-a4b-it_s3 (host reboot 14:14; 2/104; brake held auto-resume; D8 single-GPU from now)
+2026-10-25T14:23:26+09:00 START min 26b s3
+2026-10-25T16:49:27+09:00 ABORT min_gemma-4-26b-a4b-it_s3 (host reboot; 30/104 done; re-run from scratch per PREREG §2)
+2026-10-25T16:49:51+09:00 START min 26b s3
+2026-10-25T16:52:53+09:00 ABORT min_gemma-4-26b-a4b-it_s3 (host reset 16:48 with GPU0-only 26B, 30/104; auto-resumed cell stopped at 0; D9 GPU1-only from now)
+2026-10-25T16:53:16+09:00 START min 26b s3
+/home/happy/.codex/work/kaggle_gemma4_paper_2026-10/runs/min_gemma-4-26b-a4b-it_s3: resolved 29/104
+2026-10-26T01:37:44+09:00 END min 26b s3
+2026-10-26T01:37:44+09:00 START max 26b s3
+/home/happy/.codex/work/kaggle_gemma4_paper_2026-10/runs/max_gemma-4-26b-a4b-it_s3: resolved 28/104
+2026-10-26T10:16:11+09:00 END max 26b s3
+2026-10-26T10:16:24+09:00 START min 12b s3
+/home/happy/.codex/work/kaggle_gemma4_paper_2026-10/runs/min_gemma-4-12b-it_s3: resolved 27/104
+2026-10-26T15:04:12+09:00 START max 12b s3
+/home/happy/.codex/work/kaggle_gemma4_paper_2026-10/runs/max_gemma-4-12b-it_s3: resolved 26/104
+2026-10-26T19:47:35+09:00 END max 12b s3
+2026-10-26T19:47:48+09:00 START min e4b s3
+/home/happy/.codex/work/kaggle_gemma4_paper_2026-10/runs/min_gemma-4-e4b-it_s3: resolved 11/104
+2026-10-26T20:57:38+09:00 END min e4b s3
+2026-10-26T20:57:38+09:00 START max e4b s3
+/home/happy/.codex/work/kaggle_gemma4_paper_2026-10/runs/max_gemma-4-e4b-it_s3: resolved 17/104
+2026-10-26T22:02:39+09:00 END max e4b s3
+2026-10-26T22:03:02+09:00 START min 26b s4
+/home/happy/.codex/work/kaggle_gemma4_paper_2026-10/runs/min_gemma-4-26b-a4b-it_s4: resolved 32/104
+2026-10-27T06:24:44+09:00 END min 26b s4
+2026-10-27T06:24:44+09:00 START max 26b s4
+/home/happy/.codex/work/kaggle_gemma4_paper_2026-10/runs/max_gemma-4-26b-a4b-it_s4: resolved 27/104
+2026-10-27T15:10:17+09:00 END max 26b s4
+2026-10-27T15:10:30+09:00 START min 12b s4
+/home/happy/.codex/work/kaggle_gemma4_paper_2026-10/runs/min_gemma-4-12b-it_s4: resolved 25/104
+2026-10-27T20:07:50+09:00 END min 12b s4
+2026-10-27T20:07:50+09:00 START max 12b s4
+/home/happy/.codex/work/kaggle_gemma4_paper_2026-10/runs/max_gemma-4-12b-it_s4: resolved 27/104
+2026-10-28T00:49:55+09:00 END max 12b s4
+2026-10-28T00:50:08+09:00 START min e4b s4
+/home/happy/.codex/work/kaggle_gemma4_paper_2026-10/runs/min_gemma-4-e4b-it_s4: resolved 9/104
+2026-10-28T01:56:04+09:00 END min e4b s4
+2026-10-28T01:56:04+09:00 START max e4b s4
+/home/happy/.codex/work/kaggle_gemma4_paper_2026-10/runs/max_gemma-4-e4b-it_s4: resolved 18/104
+2026-10-28T02:59:59+09:00 END max e4b s4
+2026-10-28T03:00:22+09:00 START min 26b s5
+/home/happy/.codex/work/kaggle_gemma4_paper_2026-10/runs/min_gemma-4-26b-a4b-it_s5: resolved 33/104
+2026-10-28T11:25:41+09:00 END min 26b s5
+2026-10-28T11:25:41+09:00 START max 26b s5
+/home/happy/.codex/work/kaggle_gemma4_paper_2026-10/runs/max_gemma-4-26b-a4b-it_s5: resolved 30/104
+2026-10-28T20:06:09+09:00 END max 26b s5
+2026-10-28T20:06:22+09:00 START min 12b s5
+/home/happy/.codex/work/kaggle_gemma4_paper_2026-10/runs/min_gemma-4-12b-it_s5: resolved 28/104
+2026-10-29T00:55:10+09:00 END min 12b s5
+2026-10-29T00:55:10+09:00 START max 12b s5
+/home/happy/.codex/work/kaggle_gemma4_paper_2026-10/runs/max_gemma-4-12b-it_s5: resolved 23/104
+2026-10-29T05:19:47+09:00 END max 12b s5
+2026-10-29T05:20:00+09:00 START min e4b s5
+/home/happy/.codex/work/kaggle_gemma4_paper_2026-10/runs/min_gemma-4-e4b-it_s5: resolved 12/104
+2026-10-29T06:26:13+09:00 END min e4b s5
+2026-10-29T06:26:13+09:00 START max e4b s5
+/home/happy/.codex/work/kaggle_gemma4_paper_2026-10/runs/max_gemma-4-e4b-it_s5: resolved 17/104
+2026-10-29T07:27:48+09:00 END max e4b s5
+2026-10-29T07:27:48+09:00 CONFIRMATORY_COMPLETE
+2026-10-29T07:28:11+09:00 START mid 26b s1
+/home/happy/.codex/work/kaggle_gemma4_paper_2026-10/runs/mid_gemma-4-26b-a4b-it_s1: resolved 29/104
+2026-10-29T15:33:55+09:00 END mid 26b s1
+2026-10-29T15:34:08+09:00 START mid 12b s1
+/home/happy/.codex/work/kaggle_gemma4_paper_2026-10/runs/mid_gemma-4-12b-it_s1: resolved 19/104
+2026-10-29T20:14:49+09:00 END mid 12b s1
+2026-10-29T20:15:02+09:00 START mid e4b s1
+/home/happy/.codex/work/kaggle_gemma4_paper_2026-10/runs/mid_gemma-4-e4b-it_s1: resolved 11/104
+2026-10-29T21:18:36+09:00 END mid e4b s1
+2026-10-29T21:18:59+09:00 START mid 26b s2
+/home/happy/.codex/work/kaggle_gemma4_paper_2026-10/runs/mid_gemma-4-26b-a4b-it_s2: resolved 29/104
+2026-10-30T05:58:49+09:00 END mid 26b s2
+2026-10-30T05:59:02+09:00 START mid 12b s2
+/home/happy/.codex/work/kaggle_gemma4_paper_2026-10/runs/mid_gemma-4-12b-it_s2: resolved 25/104
+2026-10-30T10:33:58+09:00 END mid 12b s2
+2026-10-30T10:34:11+09:00 START mid e4b s2
+/home/happy/.codex/work/kaggle_gemma4_paper_2026-10/runs/mid_gemma-4-e4b-it_s2: resolved 14/104
+2026-10-30T11:38:33+09:00 END mid e4b s2
+2026-10-30T11:38:56+09:00 START mid 26b s3
+/home/happy/.codex/work/kaggle_gemma4_paper_2026-10/runs/mid_gemma-4-26b-a4b-it_s3: resolved 27/104
+2026-10-30T20:14:28+09:00 END mid 26b s3
+2026-10-30T20:14:41+09:00 START mid 12b s3
+/home/happy/.codex/work/kaggle_gemma4_paper_2026-10/runs/mid_gemma-4-12b-it_s3: resolved 23/104
+2026-10-31T00:56:39+09:00 END mid 12b s3
+2026-10-31T00:56:52+09:00 START mid e4b s3
+/home/happy/.codex/work/kaggle_gemma4_paper_2026-10/runs/mid_gemma-4-e4b-it_s3: resolved 14/104
+2026-10-31T02:10:24+09:00 END mid e4b s3
+2026-10-31T02:10:24+09:00 SCHEDULE_COMPLETE

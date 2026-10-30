@@ -1,0 +1,297 @@
+{
+ "cells": {
+  "gemma-4-12b-it/max": {
+   "task_runs": 520,
+   "end_reason": {
+    "time_cap": 0.40576923076923077,
+    "resolved": 0.23076923076923078,
+    "submitted_unresolved": 0.15384615384615385,
+    "tool_cap": 0.20961538461538462
+   },
+   "no_submit_patch": 0.7211538461538461,
+   "zero_size_patch": 0.4230769230769231,
+   "traces_missing_or_unreadable": 0,
+   "tool_calls_per_run": {
+    "read_file": 19.08653846153846,
+    "run_command": 17.28846153846154,
+    "edit_file": 1.8865384615384615,
+    "write_file": 1.0269230769230768,
+    "submit_patch": 0.29423076923076924,
+    "search_similar_code": 0.27884615384615385,
+    "get_status": 0.13653846153846153,
+    "code_analyzer_agent": 0.08076923076923077,
+    "get_code_neighbors": 0.06923076923076923,
+    "get_code_subgraph": 0.0038461538461538464
+   },
+   "non_workspace_tools_per_run": 0.4326923076923077,
+   "runs_with_parser_conversion": 5,
+   "runs_with_malformed_args": 5,
+   "pairwise_two_seed_disagreement": 0.16346153846153846,
+   "capped_runs": 320,
+   "capped_without_submit": 0.984375
+  },
+  "gemma-4-26b-a4b-it/max": {
+   "task_runs": 520,
+   "end_reason": {
+    "submitted_unresolved": 0.27692307692307694,
+    "time_cap": 0.3230769230769231,
+    "tool_cap": 0.12884615384615383,
+    "resolved": 0.2673076923076923,
+    "other_error": 0.0038461538461538464
+   },
+   "no_submit_patch": 0.49038461538461536,
+   "zero_size_patch": 0.11153846153846154,
+   "traces_missing_or_unreadable": 0,
+   "tool_calls_per_run": {
+    "read_file": 18.486538461538462,
+    "run_command": 18.255769230769232,
+    "write_file": 3.923076923076923,
+    "edit_file": 1.8903846153846153,
+    "submit_patch": 0.6384615384615384,
+    "search_similar_code": 0.5557692307692308,
+    "get_code_neighbors": 0.3384615384615385,
+    "get_status": 0.3153846153846154,
+    "code_analyzer_agent": 0.1423076923076923,
+    "get_code_subgraph": 0.03076923076923077
+   },
+   "non_workspace_tools_per_run": 1.0673076923076923,
+   "runs_with_parser_conversion": 0,
+   "runs_with_malformed_args": 7,
+   "pairwise_two_seed_disagreement": 0.1519230769230769,
+   "capped_runs": 235,
+   "capped_without_submit": 0.9361702127659575
+  },
+  "gemma-4-e4b-it/max": {
+   "task_runs": 520,
+   "end_reason": {
+    "submitted_unresolved": 0.8461538461538461,
+    "resolved": 0.15384615384615385
+   },
+   "no_submit_patch": 0.019230769230769232,
+   "zero_size_patch": 0.07884615384615384,
+   "traces_missing_or_unreadable": 0,
+   "tool_calls_per_run": {
+    "read_file": 4.0807692307692305,
+    "run_command": 3.080769230769231,
+    "edit_file": 2.773076923076923,
+    "submit_patch": 1.0326923076923078,
+    "search_similar_code": 0.21153846153846154,
+    "code_analyzer_agent": 0.09038461538461538,
+    "get_code_neighbors": 0.05961538461538462,
+    "write_file": 0.05576923076923077,
+    "get_status": 0.032692307692307694,
+    "get_code_subgraph": 0.009615384615384616
+   },
+   "non_workspace_tools_per_run": 0.37115384615384617,
+   "runs_with_parser_conversion": 0,
+   "runs_with_malformed_args": 3,
+   "pairwise_two_seed_disagreement": 0.10192307692307692,
+   "capped_runs": 0,
+   "capped_without_submit": null
+  },
+  "gemma-4-12b-it/min": {
+   "task_runs": 520,
+   "end_reason": {
+    "time_cap": 0.43846153846153846,
+    "submitted_unresolved": 0.17692307692307693,
+    "resolved": 0.2519230769230769,
+    "tool_cap": 0.12115384615384615,
+    "turn_cap": 0.011538461538461539
+   },
+   "no_submit_patch": 0.6634615384615384,
+   "zero_size_patch": 0.2846153846153846,
+   "traces_missing_or_unreadable": 0,
+   "tool_calls_per_run": {
+    "read_file": 18.56923076923077,
+    "run_command": 17.68076923076923,
+    "edit_file": 2.525,
+    "write_file": 1.251923076923077,
+    "submit_patch": 0.43846153846153846,
+    "get_status": 0.28846153846153844
+   },
+   "non_workspace_tools_per_run": 0.0,
+   "runs_with_parser_conversion": 7,
+   "runs_with_malformed_args": 4,
+   "pairwise_two_seed_disagreement": 0.15576923076923077,
+   "capped_runs": 297,
+   "capped_without_submit": 0.9427609427609428
+  },
+  "gemma-4-26b-a4b-it/min": {
+   "task_runs": 520,
+   "end_reason": {
+    "time_cap": 0.3557692307692308,
+    "resolved": 0.27692307692307694,
+    "submitted_unresolved": 0.31153846153846154,
+    "tool_cap": 0.05384615384615385,
+    "turn_cap": 0.0019230769230769232
+   },
+   "no_submit_patch": 0.40384615384615385,
+   "zero_size_patch": 0.08269230769230769,
+   "traces_missing_or_unreadable": 0,
+   "tool_calls_per_run": {
+    "run_command": 18.259615384615383,
+    "read_file": 17.40576923076923,
+    "write_file": 4.236538461538461,
+    "edit_file": 2.296153846153846,
+    "submit_patch": 1.2173076923076922,
+    "get_status": 0.20961538461538462
+   },
+   "non_workspace_tools_per_run": 0.0,
+   "runs_with_parser_conversion": 0,
+   "runs_with_malformed_args": 5,
+   "pairwise_two_seed_disagreement": 0.15961538461538463,
+   "capped_runs": 214,
+   "capped_without_submit": 0.8551401869158879
+  },
+  "gemma-4-e4b-it/min": {
+   "task_runs": 520,
+   "end_reason": {
+    "submitted_unresolved": 0.8961538461538462,
+    "resolved": 0.1,
+    "time_cap": 0.0038461538461538464
+   },
+   "no_submit_patch": 0.0038461538461538464,
+   "zero_size_patch": 0.1596153846153846,
+   "traces_missing_or_unreadable": 0,
+   "tool_calls_per_run": {
+    "read_file": 5.311538461538461,
+    "edit_file": 2.5942307692307693,
+    "run_command": 1.6326923076923077,
+    "submit_patch": 1.025,
+    "write_file": 0.1,
+    "get_status": 0.0057692307692307696
+   },
+   "non_workspace_tools_per_run": 0.0,
+   "runs_with_parser_conversion": 0,
+   "runs_with_malformed_args": 10,
+   "pairwise_two_seed_disagreement": 0.075,
+   "capped_runs": 2,
+   "capped_without_submit": 1.0
+  }
+ },
+ "sensitivity_12b_excl_parser_events": {
+  "delta": -0.02692307692307692,
+  "n_tasks": 104,
+  "ci95": [
+   -0.056249999999999994,
+   0.003846153846153851
+  ],
+  "ci90": [
+   -0.05144230769230769,
+   -0.0004807692307692312
+  ],
+  "p_pos": 0.954,
+  "p_neg": 0.0465,
+  "excluded_task_runs": {
+   "min": 11,
+   "max": 10
+  }
+ },
+ "sensitivity_12b_excl_parser_window": {
+  "delta": -0.03413461538461538,
+  "n_tasks": 104,
+  "ci95": [
+   -0.07051282051282051,
+   0.0016025641025641016
+  ],
+  "ci90": [
+   -0.06474358974358975,
+   -0.0038461538461538464
+  ],
+  "p_pos": 0.97,
+  "p_neg": 0.03,
+  "excluded_task_runs": {
+   "min": 76,
+   "max": 94
+  },
+  "tasks_kept": 104
+ },
+ "context_overflow": {
+  "gemma-4-12b-it/max": {
+   "events": 10,
+   "in_analyzer": 10
+  },
+  "gemma-4-26b-a4b-it/max": {
+   "events": 11,
+   "in_analyzer": 9
+  },
+  "gemma-4-e4b-it/max": {
+   "events": 0,
+   "in_analyzer": 0
+  },
+  "gemma-4-12b-it/min": {
+   "events": 0,
+   "in_analyzer": 0
+  },
+  "gemma-4-26b-a4b-it/min": {
+   "events": 0,
+   "in_analyzer": 0
+  },
+  "gemma-4-e4b-it/min": {
+   "events": 0,
+   "in_analyzer": 0
+  }
+ },
+ "throughput_26b_by_layout": {
+  "min/s1": {
+   "layout": "dual",
+   "llm_calls_per_min": 7.979727050103859,
+   "cap_time": 44,
+   "cap_tool": 4
+  },
+  "min/s2": {
+   "layout": "dual",
+   "llm_calls_per_min": 7.949829943769136,
+   "cap_time": 50,
+   "cap_tool": 7
+  },
+  "min/s3": {
+   "layout": "single",
+   "llm_calls_per_min": 9.216640013930268,
+   "cap_time": 36,
+   "cap_tool": 7
+  },
+  "min/s4": {
+   "layout": "single",
+   "llm_calls_per_min": 9.546547368857995,
+   "cap_time": 26,
+   "cap_tool": 8
+  },
+  "min/s5": {
+   "layout": "single",
+   "llm_calls_per_min": 9.109378333276844,
+   "cap_time": 29,
+   "cap_tool": 2
+  },
+  "max/s1": {
+   "layout": "dual",
+   "llm_calls_per_min": 9.07054217495868,
+   "cap_time": 36,
+   "cap_tool": 16
+  },
+  "max/s2": {
+   "layout": "dual",
+   "llm_calls_per_min": 8.645037144880552,
+   "cap_time": 44,
+   "cap_tool": 11
+  },
+  "max/s3": {
+   "layout": "single",
+   "llm_calls_per_min": 9.406151685365975,
+   "cap_time": 28,
+   "cap_tool": 13
+  },
+  "max/s4": {
+   "layout": "single",
+   "llm_calls_per_min": 8.851128614689808,
+   "cap_time": 34,
+   "cap_tool": 12
+  },
+  "max/s5": {
+   "layout": "single",
+   "llm_calls_per_min": 9.332688884252926,
+   "cap_time": 26,
+   "cap_tool": 15
+  }
+ }
+}

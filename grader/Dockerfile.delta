@@ -1,0 +1,3 @@
+# Lines appended to the competition sandbox Dockerfile (Dockerfile.public) for the repaired image
+# repaired: pytest plugins must live in the image (harness skips pytest_* wheels)
+RUN pip install --no-cache-dir --no-index --find-links=/wheels pytest-httpbin && python -c "import pytest_httpbin, httpbin; print(pytest_httpbin.__file__)"
