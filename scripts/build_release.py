@@ -51,6 +51,10 @@ def main():
         (out / 'analysis').mkdir(exist_ok=True); shutil.copy2(W / 'analysis' / f, out / 'analysis' / f)
     for f in sorted((W / 'paper').glob('fig*')):
         (out / 'paper').mkdir(exist_ok=True); shutil.copy2(f, out / 'paper' / f.name)
+    # writeup illustrations (image-model renderings from the author's specification; provenance in their README)
+    ill = out / 'paper' / 'illustrations'; ill.mkdir(parents=True, exist_ok=True); G = W / 'release_meta' / 'figures_gpt'
+    for src, dst in (('FA_design.png', 'design_overview.png'), ('FB_result.png', 'result_summary.png'), ('FC_cover.png', 'cover.png'), ('ILLUSTRATIONS_README.md', 'README.md')):
+        shutil.copy2(G / src, ill / dst)
     shutil.copy2(W / 'venv' / 'lib' / 'python3.12' / 'site-packages' / 'google_adk-1.39.1.dist-info' / 'licenses' / 'LICENSE', out / 'LICENSE')
     # models: SHA-256 as recorded before the freeze + source repositories
     (out / 'models').mkdir(exist_ok=True)

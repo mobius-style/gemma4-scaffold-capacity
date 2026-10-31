@@ -2,7 +2,7 @@
 ## A pre-registered 3 × 2 factorial with five seeds on local hardware, and a falsified registered prediction
 
 ### Abstract
-Does a richer scaffold help a local Gemma 4 agent fix real Python bugs, and does that depend on model size? We pre-registered signed predictions — the scaffold should help 12B and 26B-A4B and not E4B — and ran 3 capacities (Google QAT q4_0 GGUF on two consumer GPUs) × 2 scaffold levels × 5 seeds on 104 public competition tasks, scored by the official verifier after repairing the shipped local grader. Both predicted directions failed. The maximal scaffold raised E4B's resolution from 10.0% to 15.4% (Δ = +5.4 points, 95% CI +2.3 to +8.8). For 12B (−2.1, CI −5.0 to +1.0) and 26B-A4B (−1.0, CI −4.2 to +2.3) the 90% CIs lie inside ±5 points. Diagnostics point to budget use: the scaffold made E4B, which stopped early, check and submit non-empty patches, while the larger models, already spending their budget, exhausted the 50-tool-call cap twice as often and submitted less. Grader repair, run-level records and code are released.
+Does a richer scaffold help a local Gemma 4 agent fix real Python bugs, and does that depend on model size? We pre-registered signed predictions — the scaffold should help 12B and 26B-A4B and not E4B — and ran 3 capacities (Google QAT q4_0 GGUF on two consumer GPUs) × 2 scaffold levels × 5 seeds on 104 public competition tasks, scored by the official verifier after repairing the shipped local grader. Both predicted directions failed. The maximal scaffold raised E4B's resolution from 10.0% to 15.4% (Δ = +5.4 points, 95% CI +2.3 to +8.8). For 12B (−2.1, CI −5.0 to +1.0) and 26B-A4B (−1.0, CI −4.2 to +2.3) the pooled 90% CIs lie inside ±5 points. Diagnostics point to budget use: the scaffold made E4B, which stopped early, check and submit non-empty patches, while the larger models, already spending their budget, exhausted the 50-tool-call cap twice as often and submitted less. Grader repair, run-level records and code are released.
 
 ### 1. Introduction
 Single runs on this benchmark are noisy: two identical 31B passes disagreed on 19 of 123 tasks (Zhu, discussion 747168), a 31B prompt ablation could not separate an engineered prompt from an empty one (Thakur, 747857), and E4B was reported at 0 of 31 tasks (Gluzdov, 750974). Whether scaffolding helps small local models, and whether that depends on size, needs repeated runs and a decision rule fixed in advance.
@@ -30,7 +30,7 @@ Three fidelity fixes, logged as deviations (D1 and D2 before any kept run; D5 af
 - **D2:** return malformed tool-call arguments to the model as a tool error, as reported for the scorer (Zhu, 747168), instead of aborting.
 - **D5:** return llama.cpp's "unparseable output" error to the model as text, as we assume vLLM would. Both 12B seed-1 cells were re-run after this fix.
 
-Events were counted: 35 malformed-argument events and 121 parser conversions, 118 of them in 12B.
+We counted 35 malformed-argument events and 121 parser conversions, 118 of them in 12B.
 
 The harness scores the agent's submitted patch or, without one, the working-tree diff, so a run can resolve without calling `submit_patch`. The two scaffold levels:
 
@@ -61,7 +61,7 @@ The frozen analysis script initially computed only descriptives. Its bootstrap, 
 - contrasts split at Gemma 4's January 2025 pre-training cutoff (Gemma Team, 2026; 21 tasks before, 83 after);
 - a 13-gram memorisation screen.
 
-Scripts for these analyses, and the end-reason diagnostics, were written after the confirmatory result (D11).
+These scripts and the end-reason diagnostics were written after the confirmatory result (D11).
 
 Silent host resets forced 26B onto one GPU from seed 3 on (D8, D9); seeds 1–2 were sharded over two GPUs, and both levels of a seed share a layout. Cell 26B/min/seed 3 was restarted nine times after resets, against a registered "re-run once" (D10); every restart followed an incomplete run, never a result.
 
@@ -86,7 +86,7 @@ Two-run disagreement is the mean, over seed pairs, of the share of tasks resolve
 |---|---|---|---|---|
 | H1a 26B > 0 | −0.010 [−0.042, +0.023] | no | 0.71, 1.00 | [−0.037, +0.019], inside |
 | H1b 12B > 0 | −0.021 [−0.050, +0.010] | no | 0.90, 1.00 | [−0.044, +0.004], inside |
-| H1c E4B ≤ 0 | +0.054 [+0.023, +0.088] | no: reversed | 0.999, 1.00; reverse direction 0.001 (Bonferroni 0.004)ᵃ | — |
+| H1c E4B ≤ 0 | +0.054 [+0.023, +0.088] | no: reversed | 0.999, 1.00; reverse direction 0.001 (Bonferroni 0.004)ᵃ | [+0.027, +0.083], outside |
 | H2 26B − E4B > 0 | −0.063 [−0.108, −0.017] | no: reversed | 0.998, 1.00 | — |
 
 ᵃ The reverse-direction rule was registered; its p was computed post hoc with the same bootstrap (D11). Bonferroni bounds Holm.
@@ -104,7 +104,7 @@ We therefore claim no benefit for 26B, and equivalence only for the pooled estim
 
 - **GEE:** the E4B level coefficient is +0.49 logit (95% CI +0.19 to +0.80); the level × 12B and level × 26B interactions are −0.61 (−0.95 to −0.26) and −0.54 (−0.88 to −0.20).
 - **Slope check:** the slope of Δ over capacity rank is −0.032 (−0.054 to −0.009), opposite to the registered sign.
-- **McNemar on majority-of-five resolution:** inconclusive, with 4 vs 1 discordant tasks for E4B, 2 vs 7 for 12B and 3 vs 4 for 26B (all p ≥ 0.18).
+- **McNemar on majority-of-five resolution:** inconclusive, with 4 vs 1 discordant tasks for E4B, 2 vs 7 for 12B and 3 vs 4 for 26B (all p > 0.17).
 
 ![Figure 1](fig1_resolution.png) *Figure 1. Resolution by capacity and level; points are seeds, bars are means.*
 
@@ -143,7 +143,7 @@ For participants:
 
 1. **Repeat runs before comparing configurations.** At 7.5–16% two-run disagreement a single pass cannot separate a five-point change from noise, while five seeds gave 95% intervals of about ±3 points.
 2. **At 12B and above, do not expect gains from prompt rules, graph tools or an analyzer under tight budgets like ours.** This agrees with Thakur's null prompt (747857) and graph-tool (746250) ablations on 31B; what matters is whether the agent submits before a cap.
-3. **On E4B-class hardware a scaffold is worth about five points, but it does not substitute for capacity:** E4B-max (15.4%) stays below 12B-min (25.2%).
+3. **On E4B-class hardware this scaffold was worth about five points, but it does not substitute for capacity:** E4B-max (15.4%) stays below 12B-min (25.2%).
 4. **Validate the local grader with gold and empty patches before trusting a local score.** Our E4B resolves 10–15% where 0/31 had been reported; the forum report cannot tell whether grader, serving or task differences explain the gap.
 
 Our earlier single-turn result did not transfer to budgeted agents; we read this as bounding its domain rather than refuting it (Toeda 2026b formalises the capacity assumption).
@@ -163,7 +163,7 @@ The public repository (https://github.com/mobius-style/gemma4-scaffold-capacity,
 - the analysis scripts and prompts;
 - the grader-repair recipe with the gold/empty log.
 
-These records and the grader-repair recipe are offered as a resource for evaluating local agents on this benchmark. Competition data is not redistributed. Authorship: the design, code and analysis were drafted with an AI assistant (Claude); the author reviewed each step and is responsible.
+These records and the grader-repair recipe are offered as a resource for evaluating local agents on this benchmark. Competition data is not redistributed. Authorship: the design, code, analysis and text were drafted with an AI assistant (Claude) and the two illustrations rendered with ChatGPT; the author reviewed each step and is responsible.
 
 ### References
 Gemma Team 2026, Gemma 4 Technical Report, arXiv:2607.02770 · Jimenez et al. 2024, SWE-bench, ICLR · Lian et al. 2026, SWE-AGILE, arXiv:2604.11716 · Pan et al. 2025, SWE-Gym, ICML · Toeda 2026a, Governance Dose Must Match Model Capacity, doi:10.5281/zenodo.21222310 · Toeda 2026b, The Crossover Theorem, doi:10.5281/zenodo.21837217 · Vats & Golev 2026, The Scaffold Effect in Coding Agents, arXiv:2607.22585 · Wang et al. 2025, OpenHands, ICLR · Xia et al. 2024, Agentless, arXiv:2407.01489 · Yang et al. 2024, SWE-agent, NeurIPS · Kaggle discussions (gemma-4-developer-agent): 744370, 746250, 747168, 747248, 747857, 750974, 751487.

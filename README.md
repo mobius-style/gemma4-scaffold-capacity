@@ -18,6 +18,8 @@ python3 scripts/reproduce.py   # Python >= 3.10, standard library only; prints R
 |---|---|
 | `PREREGISTRATION.md`, `freeze/` | The design as frozen before the first scored run (git commit 6fac761, 2026-10-22 23:04 JST), the SHA-256 manifest, and two addenda. The timestamp is self-attested by the local git history; addendum 2 (6a367a5) was written before any confirmatory inference. |
 | `DEVIATIONS.md`, `DEVIATIONS_auto.md`, `logs/schedule.log` | Every departure from the registration, D1–D11, including host-reset restarts and post-result analyses, plus the raw scheduler log. |
+
+Two wording notes: the registration calls the min instruction "one sentence"; the shipped `prompts/system_min.md` is two sentences and the writeup says so (the registered file is unchanged). Deviation ids D3, D6 and D7 are infrastructure-only entries (see `DEVIATIONS.md`) and are not cited in the writeup.
 | `TASKSET.txt`, `data/gold_empty_verification.jsonl` | The 104 scorable tasks, and the gold-patch / empty-patch verdict for each of the 129 public tasks, taken from the real scoring path (`verify_task`). |
 | `data/runs.jsonl` | One line per task-run (4,056: 3,120 confirmatory and 936 exploratory mid-level runs, `level` = min / mid / max). Each line gives the outcome, ladder level (L0–L5), end reason (resolved, time cap, tool-call cap, …), time, tool and LLM calls, tool-use counts, whether `submit_patch` was called, and the SHA-256 of the agent patch. |
 | `analysis/*.json` | Outputs of `analyze.py` (confirmatory), `exploratory.py`, `secondary.py` and `diagnostics.py`. |
