@@ -34,6 +34,11 @@ for a in ('gemma-4-e4b-it', 'gemma-4-12b-it', 'gemma-4-26b-a4b-it'):
     exp += [pct(e['mid_contrasts'][a]['mid_resolved'])]
 me = e['mid_contrasts']['gemma-4-e4b-it']; exp += [f"mid − min +{me['mid_minus_min']['delta']:.3f}, max − mid +{me['max_minus_mid']['delta']:.3f}"]
 assert min(v for k, v in q.items() if k.startswith('mid/')) >= 0.26, 'mid q below stated floor'
+# run-record count stated in §7 must equal the released records (confirmatory = min/max, exploratory = mid)
+_rp = next(q for q in ('release/gemma4-scaffold-capacity/data/runs.jsonl', 'data/runs.jsonl') if __import__('os').path.exists(q))
+_runs = [__import__('json').loads(l) for l in open(_rp)]
+_conf = sum(r['level'] in ('min', 'max') for r in _runs); _mid = sum(r['level'] == 'mid' for r in _runs)
+exp += [f"({len(_runs):,}: {_conf:,} confirmatory and {_mid:,} exploratory mid-level)"]
 mc = x['mcnemar_majority']; exp += [f"{mc['gemma-4-e4b-it']['max_only']} vs {mc['gemma-4-e4b-it']['min_only']} discordant tasks for E4B", f"{mc['gemma-4-12b-it']['max_only']} vs {mc['gemma-4-12b-it']['min_only']} for 12B", f"{mc['gemma-4-26b-a4b-it']['max_only']} vs {mc['gemma-4-26b-a4b-it']['min_only']} for 26B"]
 L = x['ladder_sign_test']
 exp += [f"{L['gemma-4-e4b-it']['mean_level_min']:.2f} to {L['gemma-4-e4b-it']['mean_level_max']:.2f}", f"{L['gemma-4-12b-it']['mean_level_min']:.2f} to {L['gemma-4-12b-it']['mean_level_max']:.2f}",

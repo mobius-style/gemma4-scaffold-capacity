@@ -159,7 +159,7 @@ Our earlier single-turn result did not transfer to budgeted agents; we read this
 The public repository (https://github.com/mobius-style/gemma4-scaffold-capacity, Apache-2.0; archived at doi:10.5281/zenodo.23813680; Kaggle Dataset/Notebook links in its README) contains:
 
 - the pre-registration, freeze manifests and deviation logs (DEVIATIONS.md, DEVIATIONS_auto.md, schedule.log);
-- one JSONL record per task-run (3,432: 30 confirmatory and 9 mid cells), with outcome, ladder level, end reason, tool counts and patch hash;
+- one JSONL record per task-run (4,056: 3,120 confirmatory and 936 exploratory mid-level), with outcome, ladder level, end reason, tool counts and patch hash;
 - the analysis scripts and prompts;
 - the grader-repair recipe with the gold/empty log.
 
