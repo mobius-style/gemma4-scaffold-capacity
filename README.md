@@ -2,7 +2,7 @@
 
 This repository holds the materials behind the Kaggle Paper Track writeup *"Scaffolding Helps the Smallest Gemma 4 Agent, Not the Larger Ones"*: a pre-registered factorial of 3 Gemma 4 capacities (E4B, 12B, 26B-A4B) × 2 scaffold levels (min, max) × 5 seeds on 104 public tasks of the Gemma 4 Developer Agent competition.
 
-**Links.** GitHub: https://github.com/mobius-style/gemma4-scaffold-capacity · Zenodo archive: https://doi.org/10.5281/zenodo.23813680 · Kaggle Dataset: https://www.kaggle.com/datasets/taikotoeda/gemma4-scaffold-capacity · Kaggle Notebook: https://www.kaggle.com/code/taikotoeda/gemma4-scaffold-capacity-reproduce
+**Links.** GitHub: https://github.com/mobius-style/gemma4-scaffold-capacity · Zenodo archive: https://doi.org/10.5281/zenodo.23813679 · Kaggle Dataset: https://www.kaggle.com/datasets/taikotoeda/gemma4-scaffold-capacity · Kaggle Notebook: https://www.kaggle.com/code/taikotoeda/gemma4-scaffold-capacity-reproduce
 
 The confirmatory numbers can be checked on CPU in seconds:
 
